@@ -1,0 +1,65 @@
+/*
+1. Leght : kiểm tra độ dài chuỗi
+
+    EX: var mystring = 'hoc JS'
+        console.log(mystring.length)
+
+2. Find index: Tìm kiếm phần tử trong chuỗi
+    Các METHOD tìm kiếm với string:
+        + <Biến>.indexOf('<string>') : tìm kiếm phần tử 
+            EX: var mystring = 'hoc JS'
+                console.log (mystring.indexOf('JS'))
+                KQ : 4
+
+        + <Biến>.indexOf('<string>',<vị trí bắt đầu tìm kiếm>) : tìm kiếm phần tử từ vị trí bắt đầu
+            EX2 :  var mystring = 'hoc JS học với JS pro' 
+            console.log (mystring.indexOf('js', <vị trí bắt đầu tìm kiếm> )) 
+        
+        + <Biến>.lastIndexOf('<string>') : tìm ngước từ phần tử cuối cùn ngược về trước
+
+        + <Biến>.search('<string>') : tìm kiếm phần tử theo biểu thức chính quy ***
+
+    *** Lưu ý : trong JS , phần tử string được đánh số bắt đầu từ 0 - n
+
+3.Cut string : cắt
+    console.log(<Biến>.slice(<start> ,<end>))
+    EX: console.log(mystring.slice(4,6)) 
+    
+    METHODS :
+        + console.log(<Biến>.slice(<start> ,<end>)) : theo vị trí bắt đầu và vị trí kết thúc
+        + console.log(<Biến>.slice(<start>)) : cắt từ vị trí ban đầu đến hết
+        + console.log(<Biến>.slice(-<end> ,-<start>)) : cắt từ phải qua trái
+
+4. Replace : ghì đè
+    console.log(<Biến>.replace('<chuỗi gốc>', '<chuỗi cần thay thế>'))
+
+    METHODS :
+        + console.log(<Biến>.replace('<chuỗi gốc>', '<chuỗi cần thay thế>')) : Thay thế cơ bản
+        + console.log(<Biến>.replace(/<chuỗi gốc>/g, '<chuỗi cần thay thế>')) : thay thế khi có nhiều chuỗi giống nhau
+
+5. Convert to upper case : đổi thành chữ hoa
+
+    console.log(<biến>.toUpperCase())
+
+6. Convert to lower case : đổi thành chữ thường
+    console.log(<biến>.toLowerCase())
+
+7. Trim : xóa khoảng trắng thừa ở 2 đầu
+
+    console.log(<biến>.trim())
+
+8. Split : cắt chuỗi thành mảng
+    console.log(<biến>.split('<điểm chung>'))
+    EX
+    var languages = 'js , php , ruby' ;
+        console.log(languages.split('<, >'))
+
+    METHODS:
+    console.log(<biến>.split('<điểm chung>')) : cắt phần tử chuỗi thành mảng
+    console.log(<biến>.split(''))  : cắt từng phẩn tử chuỗi thành mảng
+
+9. Get a charecter by index : lấy 1 ký tự bởi 1 index cho trước
+
+    EX : const mysting = 'Vu thang'
+        console.log(mystring.charAt(0))
+        KQ : V 

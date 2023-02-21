@@ -1,0 +1,20 @@
+ 
+
+EX:
+
+    var date  = new date();
+
+    console.log(date) ; // typeof của date là 1 object
+
+    => trả về 1 chuỗi (string) :  thứ ngày tháng năm giờ giúp giây múi giờ
+
+1. Cách lấy ra  thời gian cụ thẻ :
+
+    var date  = new Date;
+    +    date.getFullYear() ; // Lấy ra năm
+    +    date.getMoth() + 1 ;  // Lấy ra tháng có giá trị từ 0->11 vì vậy phải + 1  
+    +    date.getDate() ; // Lấy ra ngày
+    +    date.getHours() ; // Lấy ra giờ 
+    +    date.getMinutes(); // Lấy ra phút
+    +    date.getSecoonds(); // Lấy ra giây
+    +    

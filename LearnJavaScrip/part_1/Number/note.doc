@@ -1,0 +1,24 @@
+Kiểu số (Number) trong javascript
+
+1. Tạo giá trị Number :
+    + Cách tạo:
+        EX : 
+            var age = 23 ;
+            var pi = 3.14 ;
+    + Các cách Tạo
+        * var age = 23 ;
+        * var otherNumber = new Number(9);
+    + kiểm tra dât type :
+        * kiểm tra (so sánh vs NaN)
+            EX : var result = 20/ 'abc';
+                console.log(isNaN(result)) ;
+                KQ : True 
+
+2. Làm việc với Number :
+    - To String : đổi từ number sang string
+        EX : var age = 23 ;
+            console.log(age.toString())
+    - To Fixed : (làm tròn số thập phân)
+        EX : var PI = 3.14 ;
+            console.log(PI.toFixed(<tham số>)) : KQ = 3
+        * Tham số : số làm tròn sau phần thâp phân

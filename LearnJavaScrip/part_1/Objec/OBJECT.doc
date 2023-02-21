@@ -1,0 +1,54 @@
+OBJECT
+1. Địng nghĩa
+    EX :
+        Var myinfo = {
+            'ful-name' : 'Van Thang' , // note : muốn 1 key có kí tự đặc biệt thì phải biến nó thành chuỗi bằng cách cho nó vào dấu ngoặc kép
+            age: 18,
+            address: 'Dong Nai'
+        };
+
+2. thêm 1 key và value vào trong OBJECT :
+
+     EX :
+        Var myinfo = {
+            'ful-name' : 'Van Thang' , 
+            age: 18,
+            address: 'Dong Nai'
+        };
+        myinfo.<key> =  'vvt.6109@gmail.com' hoặc my.info['my-email'] = 'vvt.6109@gmail.com'
+
+3. Lấy value ra ngoài OBJECT
+     EX :
+        Var myinfo = {
+            'ful-name' : 'Van Thang' ,
+            age: 18,
+            address: 'Dong Nai'
+        };
+        console.log(myInfo.name) hoặc console.log(myInfo.['FUL-NAME'])
+
+4. Thêm 1 biến vào trong OBJECT :
+    EX 
+    var emailKey = 'email'
+
+    var Var myinfo = {
+            'ful-name' : 'Van Thang' , 
+            age: 18,
+            address: 'Dong Nai'
+            [emailKey]: 'vvt.6109@gmail.com'
+        };
+
+5. xóa key + value trong OBJECT :
+
+     delete myInfo.age // xóa key+value age trong object myInfo
+
+6. key + value là 1 funtion 
+
+var Var myinfo = {
+            'ful-name' : 'Van Thang' , 
+            age: 18,
+            address: 'Dong Nai'
+            [emailKey]: 'vvt.6109@gmail.com'
+            getName: funtion(){
+                return this.name; // this ở đây là myinfo
+            }   // 1 funtion trong 1 object được gọi là 1 PHƯƠNG THỨC 
+        };

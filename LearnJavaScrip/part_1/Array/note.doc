@@ -1,0 +1,83 @@
+1. Tạo mảng
+    - cách tạo 
+            ** Cách 1
+                EX: Var languages = ['Javascrip' , 'PHP' ,'Ruby'] ;
+            ** Cách 2
+                EX: var languages = new Array('Javascrip' , 'PHP' , 'Ruby')
+        + phần tử được đánh số tt từ 0 -> n
+        + đưa được tất cả các kiểu dữ liệu vào trong mảng
+    - Kiểm tra kiểu dữ liệu:
+                EX:
+                    console.log(Array.isArray(<Biến>) ) /*trả về true và false*/
+
+2. Truy xuất mảng:
+    - kiểm tra độ dài mảng:
+        console.log(<Tên mảng>.length) ;
+
+    - Lấy phần tử theo index : 
+        console.log(<Tên mảng>[<Phần tử mảng>])
+
+
+
+        **********************LÀM VIỆC VỚI MẢNG *******************************
+
+        METHODS:
+    
+1/ To String: 
+    Chuyển kiểu dữ liệu phần tử thành String
+        EX: Var languages = ['Javascrip', 'PHP', 'Ruby']
+            console.log(languages.toString())
+
+2/ Join
+    biến Array thành 1 chuỗi 
+        EX: Var languages = ['Javascrip', 'PHP', 'Ruby']
+            console.log(languages.join('<dấu ngăn cách giữa các phẩn tử mảng khi chuyển qua String>'))
+
+3/ Pop
+    Xóa đi phần tử CUỐI mảng và trả về phần tử vừa xóa
+        EX: EX: Var languages = ['Javascrip', 'PHP', 'Ruby']
+            console.log(languages.pop()) // Xóa phần tử cuối mảng và trả về phần tử đã Xóa
+            console.log(languages)
+                => KQ : ['Javascrip' , 'PHP'] <Trả về 'Ruby'>
+            console.log(languages.pop()) // Xóa phần tử cuối mảng và trả về phần tử đã Xóa
+            console.log(languages)
+                => KQ : ['Javascrip' ] <Trả về 'PHP'>
+            console.log(languages.pop()) // Xóa phần tử cuối mảng và trả về phần tử đã Xóa
+            console.log(languages)
+                => KQ : [ ] <Trả về 'Javascrip'>
+            console.log(languages.pop()) // Xóa phần tử cuối mảng và trả về phần tử đã Xóa
+            console.log(languages)
+                => KQ : [ ] <Trả về UNDEFINED>
+
+4/ Push
+    Thêm 1 hoặc nhiều phần tử vào CUỐI mảng và trả về độ dài mới của mảng
+        EX: Var languages = ['Javascrip', 'PHP', 'Ruby']
+            console.log(languages.push('Dart')) // thêm các phần tử khác bằng dấu phẩy 
+            console.log(languages)
+                => KQ : ['Javascrip', 'PHP', 'Ruby', 'Dart']
+
+5/ Shift
+     Xóa đi phần tử ĐẦU mảng và trả về phần tử vừa xóa
+
+6/ Unshift
+    Thêm 1 hoặc nhiều phần tử vào ĐẦU mảng và trả về độ dài mới của mảng
+
+7/ Splicing
+    Có thể xóa, cắt, chèn phần tử vào mảng 
+        +Xóa:
+             EX: Var languages = ['Javascrip', 'PHP', 'Ruby']
+                languages.splice(1 , 0 , 'Dart') //  < tham số thứ 1 >:  khi hàm này chạy, nó sẽ trỏ vào vị trí phần tử 1  
+                                                    <tham số thứ 2> : từ vị trí đặt con trỏ sẽ xóa đi bao nhiêu phần tử .
+                                                    <tham số thứ 3> : từ vị trí đặt con trỏ sẽ chèn thêm phần tử (thêm nhiều phần tử bằng cách thêm dấu phẩy)
+
+8/ Concat
+    Nối nhiều Array vào thành :
+           EX: Var languages = ['Javascrip', 'PHP', 'Ruby']
+                Var languages2 = ['Dart', 'Ruby']
+            console.log(languages.Concat(languages2)) // mảng nào được gọi thì là mảng gốc mảng truyền vào sẽ hợp vào mảng gốc 
+
+
+9/ Slicing
+    cắt và lấy 1 vài hoặc toàn bộ phần tử của mảng
+            EX: Var languages = ['Javascrip', 'PHP', 'Ruby']
+                 console.log(languages.slice(1,2)) // điểm đầu vào điểm cuối (STT phần tử) của phần tử cần cắt

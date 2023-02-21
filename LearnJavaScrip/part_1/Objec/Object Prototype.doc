@@ -1,0 +1,24 @@
+
+1. Prototype là gì : Nguyên mẫu của object
+
+    
+
+    funtion User(fristName, lastName, avatar)  
+        this.fristName = fristName ;  
+        this.lastName  = lastName ;
+        this.avatar = avatar  ;
+        this.getName = funtion () {
+            return '${this.fristName} ${this.lastName}'
+        }
+    }
+
+    //***note fristName : thuộc tính , getName : phương thức
+
+    Var author = new User('Thắng', 'Vũ' , 'Avatar.jpg'); 
+    Var User = new User('Thương', 'Mai' , 'Avatar.jpg');
+
+    author.title = 'chia sẻ cùng F8'
+    user.comment = 'abc xyz'
+    
+    console.log (author.getName()) ;
+     console.log (user .getName()) ;

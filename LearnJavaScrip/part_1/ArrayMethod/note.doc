@@ -1,0 +1,24 @@
+ARRAY METHOD
+
+1. forEarch() : duyệt qua từng phần tử của mảng
+
+    courses.forEach(<callback> (<element>, index){
+        //callback
+    });
+
+2. every() : kiểm tra tất cả phần tử của mảng, phải tuân thủ 1 điều kiện nào đó
+    ** trả về kiểu boolean 
+
+    courses.every(<callback> (<element>, index){
+        //callback
+    });
+
+3. some()
+
+4. find()
+
+5.filter()
+
+6. map()
+
+7. reduce()

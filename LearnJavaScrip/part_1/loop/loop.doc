@@ -1,0 +1,40 @@
+
+1. for : lặp với điều kiện đúng
+    EX: for (var i = 1; i <= 1000; i++) {
+    console.log (i);
+    }
+2. for/in : lặp qua key của đôi tượng // dùng để lấy key của đối tượng .
+
+
+    EX : var myInfo = {
+        name : thang, 
+        age : 23,
+        address : 'Dong Nai'
+    }
+        for (var key in myInfo) {
+            console.log(myInfo[key])
+        }
+
+
+3. for/of : lặp qua value của đối tượng
+
+    muốn sử dụng vs OJ thì phải chuyển đổi 
+
+4. while : lặp khi điều kiện đúng
+
+
+
+5. do/while : lặp ít nhất 1 lần, sau đó lạp khi điều kiện đúng
+
+
+6. Break & continue
+
+    + break : out vòng lặp
+
+    + continue : tiếp tục và bỏ qua những phần sau continue
+
+7. Nested Loop : vòng lặp lồng vòng lặp 
+
+    giống vs vòng lặp mảng 2 chiều
+
+8. Đệ quy :

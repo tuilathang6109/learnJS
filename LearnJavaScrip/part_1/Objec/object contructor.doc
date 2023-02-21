@@ -1,0 +1,49 @@
+OBJECT CONTRUCTOR : xây dựng đối tượng
+
+1. Tạo 1 OBJECT CONTRUCTOR
+    EX
+    funtion User(fristName, lastName, avatar)  //  tạo ra 1 bản thiết kế (hàm tạo)
+        this.fristName = fristName ;  // giải thích như sau   (sau này đối tượng được tạo bởi bản thiết kế này với thuộc tính 'fristName' = với tham số fristName khi khởi tạo đối tượng)
+        this.lastName  = lastName ;
+        this.avatar = avatar  ;
+    }
+
+    Var author = new User('Thắng', 'Vũ' , 'Avatar.jpg'); // truyền tham số và bản thiết kế có sẵn
+    Var User = new User('Thương', 'Mai' , 'Avatar.jpg');
+
+
+2. thêm thuộc tính riêng lẻ cho từng đối tượng
+
+    EX
+    funtion User(fristName, lastName, avatar)  
+        this.fristName = fristName ;  
+        this.lastName  = lastName ;
+        this.avatar = avatar  ;
+    }
+
+    Var author = new User('Thắng', 'Vũ' , 'Avatar.jpg'); 
+    Var User = new User('Thương', 'Mai' , 'Avatar.jpg');
+
+    author.title = 'chia sẻ cùng F8'
+    user.comment = 'abc xyz'
+
+3. *******
+
+ EX
+    funtion User(fristName, lastName, avatar)  
+        this.fristName = fristName ;  
+        this.lastName  = lastName ;
+        this.avatar = avatar  ;
+        this.getName = funtion () {
+            return '${this.fristName} ${this.lastName}'
+        }
+    }
+
+    Var author = new User('Thắng', 'Vũ' , 'Avatar.jpg'); 
+    Var User = new User('Thương', 'Mai' , 'Avatar.jpg');
+
+    author.title = 'chia sẻ cùng F8'
+    user.comment = 'abc xyz'
+    
+    console.log (author.getName()) ;
+     console.log (user .getName()) ;

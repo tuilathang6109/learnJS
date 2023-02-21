@@ -1,0 +1,56 @@
+
+
+Math Object : không phải là 1 object contructor nên không thẻ : new Math
+
+    - Math.<method>
+
+1. Math.PI : trả ra giá trị số PI
+
+    EX : console.log(Math.PI)
+
+2. Math.round() : làm tròn số theo tiểu chuẩn
+
+    EX : console.log(Math.round(1.3)) => KQ = 1 
+        console.log(Math.round(1.5)) => KQ = 2
+
+3. Math.abs() : giá trị tuyệt đối
+
+    EX : console.log(Math.abs(-4)) = > KQ = 4
+
+4. Math.ceil() : làm tròn trên
+
+    EX : console.log(Math.ceil(4.1)) => KQ = 5
+
+6. Math.floor() : Làm tròn dưới
+
+    EX : console.log(Math.floor(4.9)) => KQ = 4
+
+7. Math.random() : trả về số tự nhiên nhỏ hơn 1 (cả số thập phân)
+
+    EX 1 :  console.log(Math.random()); // số ngẫu nhiên nhỏ hơn 1
+
+    EX 2 : console.log(Math.floor(Math.random() *10 )) // Làm tròn 1 số ngẫu nhiên từ 0 - 9
+
+        EX 2.1 : var random = Math.floor(Math.random()*5) ;
+                var bonous = [
+                    '10 coins',
+                    '20 coins',
+                    '30 coins',
+                    '40 coins',
+                    '50 coins',
+                ]
+            console.log(bonous[random]) ; 
+
+        EX 2.2 :    game cường hóa đồ 
+                var random = Math.floor(Math.random()*100) ;
+                if (random < 5) {
+                    console.log('cường hóa thành công')
+                }
+
+8. Math.min() : lấy ra số nhỏ nhất
+
+    console.log(Math.min(-100 , 1, 90, 50)); KQ => -100
+    
+9. Math.max() : lấy ra số lớn nhất
+
+    console.log(Math.max(-100 , 1, 90, 50)); KQ => 90
