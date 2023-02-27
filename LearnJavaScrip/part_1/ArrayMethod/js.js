@@ -34,9 +34,52 @@ var courses = [
     // });
 
 // 2. every() ;
-    // EX 2 : chỉ trả vè True/false => kiểm tra điều kiện từ trên xuống dưới (trái qua phải)
-    var isFree = courses.every(function(index , course){
-            return course.coin === 0 ;
-        });
+    // EX 2 : chỉ trả vè True/false => kiểm tra tất điều kiện từ trên xuống dưới (trái qua phải)
+    // nếu có 1 điều kiện ko thỏa vẫn sẽ trả về giá trị false (Tương tự &&)
+    // var isFree = courses.every(function(index , course){
+    //         return course.coin === 0 ;
+    //     });
 
-    console.log(isFree);
+    // console.log(isFree);
+
+// 3. Some() ;
+
+    // EX 3 : chỉ trả vè True/false => kiểm tra tất điều kiện từ trên xuống dưới (trái qua phải)
+    // nếu có 1 điều kiện thỏa vẫn sẽ trả về giá trị true (Tương tự || )
+    // var isFree = courses.every(function(index , course){
+    //         return course.coin === 0 ;
+    //     });
+
+    // console.log(isFree);
+
+// 4. Find() ;
+
+    // EX4 : 
+    // var course = courses.find(function(index , course){
+    //             return course.name === 'ReactJS';
+    //         })
+    
+    //     console.log(course);
+    
+
+
+// 6. map() :
+
+//     EX 6 : 
+       
+        var newCourses = courses.map(function(course, index){
+        //    ví dụ 1.//  console.log(course);
+        //     ví dụ 2. // return 123 ;
+            return {
+                id: course.id,
+                name: `khoa hoc: ${course.name}`,
+                coin: course.coin,
+                coinText: `gia: ${course.coin}`
+            }
+        });
+        console.log(newCourses)
+        // CÁCH HOẠT DỘNG:
+         // + map() sẽ duyệt qua từng phần tử của mảng/object
+         // + mỗi khi duyệt qua từng phần tử => sẽ trả về phần tử đó cho đối số của hảm
+         // + * khi return vào giá trị nào thì sẽ trả về chính giá trị đó cho từng mảng cũ: ví dụ return 123
+         // + index : đối số  thứ 2 (key), đánh dấu thứ tự phần tử mảng

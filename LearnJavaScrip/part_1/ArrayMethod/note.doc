@@ -13,12 +13,15 @@ ARRAY METHOD
         //callback
     });
 
-3. some()
+3. some() : Ngược lại với every
 
-4. find()
+4. find() : Tìm kiếm 
 
 5.filter()
 
-6. map()
+6***. map() : chỉnh sửa , thay đổi element trong array
 
+    var newVariable = variable.map(<just function> (<đối số>, index))
+    // xem lại để hiểu hơn
+    // dùng để hiển thị trang web
 7. reduce()
