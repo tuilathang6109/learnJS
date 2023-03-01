@@ -25,3 +25,13 @@ ARRAY METHOD
     // xem lại để hiểu hơn
     // dùng để hiển thị trang web
 7. reduce()
+
+    reduce(<1 đối số có thể là 1 function>(<biến lưu trữ>,<giá trị hiện tại***>,<chỉ mục###>, <mảng gốc>){} , <khởi tạo giá trị ban đầu cho biến lưu trữ>)
+        *: THƯỜNG THÌ FUNCTION sẽ có ít nhất 2 giá trị là biến lưu trữ và giá trị hiện tại.
+    Ex : tính tổng coi reduce
+    courses.reduce(function(totalCoin, ){//code} , 0) ;
+
+    Xem lại video (RẤT KHÓ)
+
+    *** : mỗi khi duyệt đến 1 phần tử, thì giá trị hiện tại đang nằm ở vị trí đó
+    ### : chỉ mục của giá trị hiện tại

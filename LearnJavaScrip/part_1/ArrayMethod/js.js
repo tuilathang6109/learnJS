@@ -67,19 +67,54 @@ var courses = [
 
 //     EX 6 : 
        
-        var newCourses = courses.map(function(course, index){
-        //    ví dụ 1.//  console.log(course);
-        //     ví dụ 2. // return 123 ;
-            return {
-                id: course.id,
-                name: `khoa hoc: ${course.name}`,
-                coin: course.coin,
-                coinText: `gia: ${course.coin}`
-            }
-        });
-        console.log(newCourses)
+        // var newCourses = courses.map(function(course, index){
+        //     console.log(course);
+        // //     ví dụ 2. // return 123 ;
+        //     // return {
+        //     //     id: course.id,
+        //     //     name: `khoa hoc: ${course.name}`,
+        //     //     coin: course.coin,
+        //     //     coinText: `gia: ${course.coin}`
+        //     // }
+        // });
+        // console.log(newCourses)
         // CÁCH HOẠT DỘNG:
          // + map() sẽ duyệt qua từng phần tử của mảng/object
          // + mỗi khi duyệt qua từng phần tử => sẽ trả về phần tử đó cho đối số của hảm
          // + * khi return vào giá trị nào thì sẽ trả về chính giá trị đó cho từng mảng cũ: ví dụ return 123
          // + index : đối số  thứ 2 (key), đánh dấu thứ tự phần tử mảng
+
+// 7. Reduce();
+
+    //     EX 7 : 
+            
+    //     var sports = [
+    //     {
+    //         name: 'Bơi lội',
+    //         gold: 11
+    //     },
+    //     {
+    //         name: 'Boxing',
+    //         gold: 3
+    //     },
+    //     {
+    //         name: 'Đạp xe',
+    //         gold: 4
+    //     },
+    //     {
+    //         name: 'Đấu kiếm',
+    //         gold: 5
+    //     },
+    // ]
+
+    // function getTotalGold(sports) {
+    //     var total = sports.reduce(function(soHuyChuong,rank){
+    //         return soHuyChuong + rank.gold ;
+    //     },0);
+    //     return total ;
+    // }
+
+    // // Expected results:
+    // console.log(getTotalGold(sports)) // Output: 23
+
+
