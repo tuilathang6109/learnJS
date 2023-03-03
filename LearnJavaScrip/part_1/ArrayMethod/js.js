@@ -117,4 +117,36 @@ var courses = [
     // // Expected results:
     // console.log(getTotalGold(sports)) // Output: 23
 
+    // Ex 8 : flat (làm phẳng mảng bằng reduce) ;
 
+        // var depthArray = [1,2,[3,4],5,6,[7,8,9]];
+        // var flatArray = depthArray.reduce(function(flatOutput, depthItem){
+        //     return flatOutput.concat(depthItem);
+        // },[]) // ***xem lại ví dụ để hiểu rõ hơn
+        // console.log(flatArray) ;
+
+    // EX 9 : hãy coi lại video ***
+
+
+
+    // EX 10 : tự tạo funtion reduce():
+        // Array.prototype.reduce2 = function (callback, results){
+        // let i = 0; 
+        // if (arguments.length < 2){
+        //     i = 1;
+        //     results = this[0];
+        // };
+        
+        // for ( ; i < this.length; i++){
+        //     results = callback(results, this [i], i, this);
+        // };
+        // return results;
+        // };
+
+        // const numbers = [1, 2, 3, 4, 5];
+
+        // const result = numbers.reduce2((total, number) => {
+        //     return total + number;
+        // });
+
+        // console.log(result);
